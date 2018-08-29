@@ -26,7 +26,7 @@ def backupcheck(directory):
         command = "find /backup/%s/* -maxdepth 1 -type f -mtime -1" % directory
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect( 'dacsupport.bendcable.net', username='USERNAME', password='PASSWORD', look_for_keys=False)
+        ssh.connect( 'REDACTED', username='REDACTED', password='REDACTED', look_for_keys=False)
         stdin, stdout, stderr = ssh.exec_command(command)
         warning_message = "Backup failed for %s (no new files in /backup/%s)" % (directory,directory)
         clear_message   = "Backup successful for %s (new files found in /backup/%s)" % (directory,directory)
