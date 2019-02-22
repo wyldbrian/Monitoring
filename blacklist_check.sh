@@ -17,7 +17,7 @@ BLISTS="
     ips.backscatterer.org
     bl.mailspike.net
 "
-# Another test
+#
 # Next we create an additional Array that includes the servers we want to check. This array includes various formats for the server name and IP for usage in the events and checks.
 #
 SERVERS="
